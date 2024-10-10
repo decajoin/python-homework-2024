@@ -1,0 +1,8 @@
+# 输入2个集合，setA 和 setB，分别输出他们的交集、并集、和差集(setA-setB)
+setA = input("请输入集合 A：")
+setB = input("请输入集合 B：")
+setA = set(map(int, setA.split()))
+setB = set(map(int, setB.split()))
+print("交集：", setA.intersection(setB))
+print("并集：", setA.union(setB))
+print("差集：", setA.difference(setB))
